@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Amigão Pet · Nova logo</title>
+<link rel="icon" type="image/png" href="/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --royal: #1537b8;
+    --royal-deep: #0b1f73;
+    --ink: #071449;
+    --sun: #ffc61a;
+    --sun-deep: #e2a600;
+    --cream: #fffaf0;
+    --line: rgb(7 20 73 / 0.1);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: Nunito, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 56px 16px 96px; }
+  h1, h2, h3 { font-family: "Baloo 2", system-ui, sans-serif; margin: 0; line-height: 1.05; }
+  h1 { font-size: clamp(2.4rem, 6vw, 4rem); font-weight: 800; }
+  h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 800; margin-bottom: 8px; }
+  h3 { font-size: 1.35rem; font-weight: 800; }
+  .kicker { color: var(--royal); font-weight: 800; letter-spacing: .18em; text-transform: uppercase; font-size: .85rem; margin: 0 0 10px; }
+  .lead { font-size: 1.15rem; color: rgb(7 20 73 / .7); max-width: 60ch; margin: 14px 0 0; }
+  section { margin-top: 88px; }
+  .muted { color: rgb(7 20 73 / .6); }
+
+  /* Antes / depois */
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 28px; }
+  .card { background: #fff; border-radius: 28px; padding: 28px; box-shadow: 0 20px 40px -28px rgb(7 20 73 / .45); border: 1px solid var(--line); }
+  .card .label { font-weight: 800; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 18px; display: inline-block; padding: 4px 12px; border-radius: 99px; }
+  .label.old { background: #f1ede4; color: rgb(7 20 73 / .6); }
+  .label.new { background: var(--sun); color: var(--ink); }
+  .compare .stage { aspect-ratio: 1; display: grid; place-items: center; border-radius: 20px; background: var(--cream); }
+  .compare .stage img, .compare .stage svg { width: 72%; height: auto; }
+  .notes { margin: 18px 0 0; padding-left: 18px; line-height: 1.6; }
+
+  /* Conceitos */
+  .concepts { display: grid; gap: 24px; margin-top: 28px; }
+  .concept { display: grid; grid-template-columns: 1.1fr 1fr; gap: 0; overflow: hidden; padding: 0; }
+  .concept .panel { display: grid; place-items: center; padding: 40px; min-height: 340px; }
+  .concept .panel.blue { background: radial-gradient(circle at 75% 20%, #2c56e6, var(--royal) 60%); }
+  .concept .panel.light { background: #fff; }
+  .concept .info { grid-column: 1 / -1; padding: 24px 28px 28px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 8px 28px; align-items: baseline; }
+  .concept .info p { margin: 0; flex: 1 1 320px; }
+  .tag { font-weight: 800; color: var(--royal); }
+
+  /* Tamanhos pequenos */
+  .sizes { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 28px; }
+  .row { display: flex; align-items: end; gap: 22px; flex-wrap: wrap; margin-top: 12px; }
+  .row figure { margin: 0; text-align: center; font-size: .75rem; font-weight: 700; color: rgb(7 20 73 / .5); }
+  .row figure > * { display: block; margin: 0 auto 6px; border-radius: 50%; }
+
+  /* Aplicações */
+  .apps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 28px; }
+  .app { background: #fff; border-radius: 28px; padding: 24px; border: 1px solid var(--line); box-shadow: 0 20px 40px -28px rgb(7 20 73 / .45); }
+  .app h3 { font-size: 1.05rem; margin-bottom: 16px; }
+  .insta { display: flex; gap: 16px; align-items: center; }
+  .insta .ring { padding: 3px; border-radius: 50%; background: conic-gradient(#feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #feda75); }
+  .insta .ring > div { background: #fff; padding: 3px; border-radius: 50%; }
+  .insta svg { width: 84px; height: 84px; display: block; }
+  .insta b { display: block; font-size: 1rem; }
+  .insta span { font-size: .85rem; color: rgb(7 20 73 / .6); }
+  .bizcard { aspect-ratio: 1.75; border-radius: 14px; background: var(--royal); color: #fff; padding: 18px 20px; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden; }
+  .bizcard small { font-size: .72rem; opacity: .85; line-height: 1.5; }
+  .bizcard .paw-bg { position: absolute; right: -24px; bottom: -24px; width: 130px; opacity: .1; }
+  .appicon { display: flex; gap: 18px; align-items: end; }
+  .appicon .sq { width: 76px; height: 76px; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 18px -8px rgb(7 20 73 / .5); }
+  .appicon .sq svg { width: 100%; height: 100%; display: block; }
+  .tab { display: flex; align-items: center; gap: 8px; background: #eef0f6; border-radius: 10px 10px 0 0; padding: 8px 14px; font-size: .8rem; font-weight: 700; width: max-content; }
+  .tab svg { width: 16px; height: 16px; }
+
+  /* Paleta */
+  .palette { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 28px; }
+  .swatch { border-radius: 22px; overflow: hidden; border: 1px solid var(--line); background: #fff; }
+  .swatch div { height: 110px; }
+  .swatch p { margin: 0; padding: 12px 14px; font-size: .85rem; }
+  .swatch b { display: block; font-size: .95rem; }
+
+  @media (max-width: 760px) {
+    .compare, .sizes, .concept { grid-template-columns: 1fr; }
+    .apps, .palette { grid-template-columns: 1fr 1fr; }
+    .concept .panel { min-height: 260px; padding: 28px; }
+  }
+  @media (max-width: 480px) {
+    .apps, .palette { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== Símbolos reutilizáveis ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Cachorro + gato (mascote) -->
+    <symbol id="pets" viewBox="0 0 120 96">
+      <!-- gato (atrás) -->
+      <g>
+        <path d="M74 48 L77 24 L90 39 Z" fill="#fff" />
+        <path d="M110 48 L107 24 L94 39 Z" fill="#fff" />
+        <path d="M78 41 L79.5 31 L85 38 Z" fill="#f6b8c8" />
+        <path d="M106 41 L104.5 31 L99 38 Z" fill="#f6b8c8" />
+        <circle cx="92" cy="58" r="21" fill="#fff" />
+        <ellipse cx="84.5" cy="56" rx="2.4" ry="3.2" fill="#071449" />
+        <ellipse cx="99.5" cy="56" rx="2.4" ry="3.2" fill="#071449" />
+        <path d="M89.5 63 h5 l-2.5 3 Z" fill="#f28aa5" />
+        <path d="M92 66 q-2 3 -5 2 M92 66 q2 3 5 2" stroke="#071449" stroke-width="1.6" fill="none" stroke-linecap="round" />
+      </g>
+      <!-- cachorro (frente) -->
+      <g>
+        <ellipse cx="18" cy="52" rx="10" ry="19" transform="rotate(18 18 52)" fill="#e2a600" />
+        <ellipse cx="68" cy="52" rx="10" ry="19" transform="rotate(-18 68 52)" fill="#e2a600" />
+        <circle cx="43" cy="54" r="27" fill="#ffc61a" />
+        <ellipse cx="43" cy="68" rx="14" ry="11" fill="#fff3c4" />
+        <ellipse cx="34" cy="50" rx="3" ry="3.8" fill="#071449" />
+        <ellipse cx="52" cy="50" rx="3" ry="3.8" fill="#071449" />
+        <circle cx="35" cy="48.8" r="1" fill="#fff" />
+        <circle cx="53" cy="48.8" r="1" fill="#fff" />
+        <ellipse cx="43" cy="62" rx="5.5" ry="4" fill="#071449" />
+        <path d="M43 66 v3 M43 69 q-3.5 4 -7 1.5 M43 69 q3.5 4 7 1.5" stroke="#071449" stroke-width="1.8" fill="none" stroke-linecap="round" />
+        <path d="M40.5 72.5 q2.5 5 5 0" fill="#f28aa5" />
+      </g>
+    </symbol>
+
+    <!-- Pata com almofada de coração -->
+    <symbol id="heartpaw" viewBox="0 0 100 100">
+      <path d="M50 88 C31 75 21 64 21 53.5 C21 45 27.5 39.5 35 39.5 C41.5 39.5 46.5 43 50 48.5 C53.5 43 58.5 39.5 65 39.5 C72.5 39.5 79 45 79 53.5 C79 64 69 75 50 88 Z" />
+      <ellipse cx="21" cy="28" rx="7.5" ry="10" transform="rotate(-22 21 28)" />
+      <ellipse cx="38" cy="16" rx="8" ry="10.5" transform="rotate(-7 38 16)" />
+      <ellipse cx="62" cy="16" rx="8" ry="10.5" transform="rotate(7 62 16)" />
+      <ellipse cx="79" cy="28" rx="7.5" ry="10" transform="rotate(22 79 28)" />
+    </symbol>
+
+    <path id="ring-top" d="M 26 100 A 74 74 0 0 1 174 100" />
+    <path id="ring-bottom" d="M 22 100 A 78 78 0 0 0 178 100" />
+  </defs>
+</svg>
+
+<div class="wrap">
+  <p class="kicker">Proposta de identidade</p>
+  <h1>Amigão Pet, logo nova</h1>
+  <p class="lead">Mantivemos o que já é deles (o azul, o amarelo e a amizade entre cachorro e gato) e tiramos o excesso, para a marca funcionar do Instagram até a fachada.</p>
+
+  <!-- ===== Antes e depois ===== -->
+  <section>
+    <p class="kicker">Antes e depois</p>
+    <h2>Menos informação, mais marca</h2>
+    <div class="compare">
+      <div class="card">
+        <span class="label old">Atual</span>
+        <div class="stage"><img src="/logo.png" alt="Logo atual do Amigão Pet" /></div>
+        <ul class="notes muted">
+          <li>Telefone, @ e endereço dentro da logo ficam ilegíveis em tamanho pequeno</li>
+          <li>Imagem de 320 px, sem arquivo vetorial</li>
+          <li>Texto em arco apertado disputa espaço com os animais</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="label new">Proposta</span>
+        <div class="stage">
+          <svg viewBox="0 0 200 200" role="img" aria-label="Nova logo Amigão Pet">
+            <use href="#seal" />
+          </svg>
+        </div>
+        <ul class="notes">
+          <li>Contatos saem da logo e vão para o site, bio e cartão</li>
+          <li>Vetor: nítido em qualquer tamanho, do favicon à fachada</li>
+          <li>Cachorro e gato com carinha, mais simpáticos e fáceis de lembrar</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Conceitos ===== -->
+  <section>
+    <p class="kicker">Versões</p>
+    <h2>Uma marca, três formatos</h2>
+    <p class="lead">Cada formato tem seu uso. O selo é a logo principal; a horizontal vai no site e em papelaria; o ícone é para os lugares pequenos.</p>
+
+    <div class="concepts">
+      <!-- 1. Selo -->
+      <div class="card concept">
+        <div class="panel blue">
+          <svg viewBox="0 0 200 200" width="280" height="280" role="img" aria-label="Selo Amigão Pet">
+            <g id="seal">
+              <circle cx="100" cy="100" r="98" fill="#fff" />
+              <circle cx="100" cy="100" r="92" fill="#1537b8" />
+              <circle cx="100" cy="100" r="61" fill="#0b1f73" />
+              <text font-family="'Baloo 2', sans-serif" font-weight="800" font-size="23" fill="#ffc61a" letter-spacing="3.5">
+                <textPath href="#ring-top" startOffset="50%" text-anchor="middle">AMIGÃO PET</textPath>
+              </text>
+              <text font-family="Nunito, sans-serif" font-weight="800" font-size="11" fill="#fff" letter-spacing="3.2">
+                <textPath href="#ring-bottom" startOffset="50%" text-anchor="middle" dominant-baseline="hanging">BANHO · TOSA · PET SHOP</textPath>
+              </text>
+              <circle cx="31" cy="100" r="3" fill="#ffc61a" />
+              <circle cx="169" cy="100" r="3" fill="#ffc61a" />
+              <use href="#pets" x="46" y="54" width="108" height="86" />
+            </g>
+          </svg>
+        </div>
+        <div class="panel light">
+          <svg viewBox="0 0 200 200" width="220" height="220" role="img" aria-label="Selo Amigão Pet sobre fundo claro">
+            <use href="#seal" />
+          </svg>
+        </div>
+        <div class="info">
+          <h3>1 · Selo <span class="tag">principal</span></h3>
+          <p class="muted">Herda o formato redondo da logo atual, então os clientes reconhecem na hora. Serve para o perfil do Instagram, adesivos, fachada e bandana dos pets.</p>
+        </div>
+      </div>
+
+      <!-- 2. Horizontal -->
+      <div class="card concept">
+        <div class="panel blue">
+          <svg viewBox="0 0 440 120" width="100%" style="max-width:460px" role="img" aria-label="Logo horizontal Amigão Pet">
+            <g id="horizontal-dark">
+              <circle cx="60" cy="60" r="56" fill="#0b1f73" />
+              <use href="#pets" x="16" y="22" width="92" height="74" />
+              <text x="128" y="68" font-family="'Baloo 2', sans-serif" font-weight="800" font-size="50" fill="#fff" letter-spacing="-0.5">Amigão <tspan fill="#ffc61a">Pet</tspan></text>
+              <text x="131" y="94" font-family="Nunito, sans-serif" font-weight="800" font-size="13" fill="#fff" fill-opacity=".8" letter-spacing="4.2">BANHO · TOSA · PET SHOP</text>
+            </g>
+          </svg>
+        </div>
+        <div class="panel light">
+          <svg viewBox="0 0 440 120" width="100%" style="max-width:400px" role="img" aria-label="Logo horizontal Amigão Pet sobre fundo claro">
+            <circle cx="60" cy="60" r="56" fill="#1537b8" />
+            <use href="#pets" x="16" y="22" width="92" height="74" />
+            <text x="128" y="68" font-family="'Baloo 2', sans-serif" font-weight="800" font-size="50" fill="#071449" letter-spacing="-0.5">Amigão <tspan fill="#1537b8">Pet</tspan></text>
+            <text x="131" y="94" font-family="Nunito, sans-serif" font-weight="800" font-size="13" fill="#071449" fill-opacity=".6" letter-spacing="4.2">BANHO · TOSA · PET SHOP</text>
+          </svg>
+        </div>
+        <div class="info">
+          <h3>2 · Horizontal <span class="tag">site e papelaria</span></h3>
+          <p class="muted">Para o topo do site, cartão de visita, nota e WhatsApp Business. O nome fica grande e legível mesmo de longe.</p>
+        </div>
+      </div>
+
+      <!-- 3. Ícone -->
+      <div class="card concept">
+        <div class="panel blue">
+          <svg viewBox="0 0 120 120" width="200" height="200" role="img" aria-label="Ícone Amigão Pet">
+            <g id="icon">
+              <rect width="120" height="120" rx="28" fill="#ffc61a" />
+              <use href="#heartpaw" x="24" y="22" width="72" height="72" fill="#1537b8" />
+              <g fill="none" stroke="#1537b8" stroke-width="3">
+                <circle cx="98" cy="22" r="6" />
+                <circle cx="86" cy="12" r="3.2" />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="panel light">
+          <svg viewBox="0 0 120 120" width="160" height="160" role="img" aria-label="Ícone Amigão Pet, versão azul">
+            <rect width="120" height="120" rx="28" fill="#1537b8" />
+            <use href="#heartpaw" x="24" y="22" width="72" height="72" fill="#ffc61a" />
+            <g fill="none" stroke="#fff" stroke-width="3">
+              <circle cx="98" cy="22" r="6" />
+              <circle cx="86" cy="12" r="3.2" />
+            </g>
+          </svg>
+        </div>
+        <div class="info">
+          <h3>3 · Ícone <span class="tag">tamanhos pequenos</span></h3>
+          <p class="muted">Uma pata com a almofada em forma de coração (o "amigão") e bolhas de banho. Funciona como ícone do navegador, carimbo de fidelidade e etiqueta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Teste de tamanho ===== -->
+  <section>
+    <p class="kicker">Teste de leitura</p>
+    <h2>Como fica pequeno</h2>
+    <p class="lead">É assim que a maioria das pessoas vê a marca: no feed, nos comentários e na lista de conversas do WhatsApp.</p>
+    <div class="sizes">
+      <div class="card">
+        <span class="label old">Atual</span>
+        <div class="row">
+          <figure><img src="/logo.png" width="96" height="96" alt="" />96 px</figure>
+          <figure><img src="/logo.png" width="56" height="56" alt="" />56 px</figure>
+          <figure><img src="/logo.png" width="32" height="32" alt="" />32 px</figure>
+          <figure><img src="/logo.png" width="20" height="20" alt="" />20 px</figure>
+        </div>
+      </div>
+      <div class="card">
+        <span class="label new">Proposta</span>
+        <div class="row">
+          <figure><svg viewBox="0 0 200 200" width="96" height="96"><use href="#seal" /></svg>96 px</figure>
+          <figure><svg viewBox="0 0 200 200" width="56" height="56"><use href="#seal" /></svg>56 px</figure>
+          <figure><svg viewBox="0 0 120 120" width="32" height="32" style="border-radius:8px"><use href="#icon" /></svg>32 px</figure>
+          <figure><svg viewBox="0 0 120 120" width="20" height="20" style="border-radius:5px"><use href="#icon" /></svg>20 px</figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Aplicações ===== -->
+  <section>
+    <p class="kicker">Na prática</p>
+    <h2>Onde a marca aparece</h2>
+    <div class="apps">
+      <div class="app">
+        <h3>Perfil do Instagram</h3>
+        <div class="insta">
+          <div class="ring"><div><svg viewBox="0 0 200 200"><use href="#seal" /></svg></div></div>
+          <div><b>amigao_pet2023</b><span>Banho e tosa · Vila Gumercindo</span></div>
+        </div>
+      </div>
+      <div class="app">
+        <h3>Cartão de visita</h3>
+        <div class="bizcard">
+          <svg viewBox="0 0 440 120" width="210"><use href="#horizontal-dark" /></svg>
+          <small>(11) 99230-4932<br />Rua Dom Bernardo Nogueira, 972<br />Vila Gumercindo · SP</small>
+          <svg class="paw-bg" viewBox="0 0 100 100" fill="#fff"><use href="#heartpaw" /></svg>
+        </div>
+      </div>
+      <div class="app">
+        <h3>Ícone e aba do navegador</h3>
+        <div class="appicon">
+          <div class="sq"><svg viewBox="0 0 120 120"><use href="#icon" /></svg></div>
+          <div class="tab"><svg viewBox="0 0 120 120"><use href="#icon" /></svg>Amigão Pet</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Paleta ===== -->
+  <section>
+    <p class="kicker">Cores</p>
+    <h2>Paleta</h2>
+    <div class="palette">
+      <div class="swatch"><div style="background:#1537b8"></div><p><b>Azul Amigão</b>#1537B8</p></div>
+      <div class="swatch"><div style="background:#ffc61a"></div><p><b>Amarelo sol</b>#FFC61A</p></div>
+      <div class="swatch"><div style="background:#071449"></div><p><b>Azul noite</b>#071449</p></div>
+      <div class="swatch"><div style="background:#fffaf0"></div><p><b>Creme</b>#FFFAF0</p></div>
+    </div>
+    <p class="lead" style="font-size:1rem">Tipografia: <b>Baloo 2</b> no nome (arredondada e amigável) e <b>Nunito</b> nos textos. As duas são gratuitas (Google Fonts).</p>
+  </section>
+</div>
+</body>
+</html>
