@@ -13,6 +13,21 @@ Site de um pet shop de bairro na Vila Gumercindo, em São Paulo. Feito pela [Ave
 - **Dados num arquivo só**: serviços, preços, endereço e avaliações ficam em `src/data.js`.
 - **Identidade de bairro**: azul e amarelo da marca, bolhas de sabão, preloader "Preparando o banho..." e animações com GSAP, Lenis e Motion. As animações respeitam o `prefers-reduced-motion`.
 
+## Números
+
+Medido com o Lighthouse 12 em 23/10/2026, no site publicado:
+
+| | Desempenho | Acessibilidade | Boas práticas |
+|---|---|---|---|
+| Desktop | 96 | 93 | 100 |
+| Celular | 74 | 93 | 100 |
+
+O site está com `noindex` de propósito, porque é uma proposta com preços de exemplo e ainda não deve aparecer no Google. Por isso o SEO não entra na tabela.
+
+## Quem fez
+
+Projeto da Averon. Toda a programação foi feita por mim: estrutura, calculadora, animações e deploy.
+
 ## Stack
 
 React 19 · Vite · Tailwind CSS v4 · GSAP · Lenis · Motion · Vercel
